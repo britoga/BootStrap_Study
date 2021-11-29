@@ -15,20 +15,53 @@
 
 <body>
 	<div class="container">
-		<!-- dropend - Vai para o lado direito a seta ---- dropup - Vai para cima a seta -->
-		<div class="btn-group dropstart">
-			<a href="https://instagram.com/" class="btn btn-primary">Instagram</a>
-			<a href="#" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown"></a>
 
-			<div class="dropdown-menu">
-				<a class="dropdown-item" href="https://goggle.com/" class="btn btn-primary">Google</a>
-				<a class="dropdown-item" href="https://facebook.com/" class="btn btn-primary">Feici</a>
-				<div class="dropdown-divider"></div>
-				<a class="dropdown-item" href="https://youtube.com/" class="btn btn-primary">Youtube</a>
+		<form action="POST">
+
+			E-mail: <br><br>
+			<input type="email" name="email"> <br><br>
+			Senha: <br><br>
+			<input type="password" name="Senha"> <br><br>
+			<input type="submit" value="Entrar">
+		</form>
+
+
+		<hr />
+
+
+		<form action="row g-3">
+
+			<div class="form-row">
+				<div class="col-auto">
+					<div class="form-group">
+						<input id="name" type="text" name="name" class="form-control" placeholder="Nome Completo:" />
+					</div>
+				</div>
+
+				<div class="col-auto">
+					<div class="form-group">
+						<input id="email" type="text" name="email" class="form-control" placeholder="Email:" />
+					</div>
+				</div>
+
+				<div class="col-auto">
+					<div class="form-group">
+						<input id="senha" type="password" name="senha" class="form-control" placeholder="Senha:" />
+					</div>
+				</div>
 
 			</div>
 
-		</div>
+			<div class="form-row">
+				<div class="col-auto">
+					<div class="form-group">
+						<input class="btn btn-primary" type="submit" value="Entrar">
+					</div>
+				</div>
+			</div>
+
+
+		</form>
 
 	</div>
 
