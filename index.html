@@ -16,64 +16,27 @@
 <body>
 	<div class="container">
 
-		<form action="POST">
+		<form method="POST">
 
-			E-mail: <br><br>
-			<input type="email" name="email"> <br><br>
-			Senha: <br><br>
-			<input type="password" name="Senha"> <br><br>
-			<input type="submit" value="Entrar">
-		</form>
-
-
-		<hr />
-
-		<!-- Daqui pra baixo tem -->
-
-		<form action="col-auto">
-
-			<div class="form-row">
-				<div class="col-auto">
-					<div class="form-group">
-						<label for="name">Nome:</label>
-						<input id="name" type="text" name="name" class="form-control" placeholder="Nome e Sobrenome" />
-					</div>
+			<label for="real">Real:</label>
+			<div class="input-group input-group">
+				<div class="input-group-prepend">
+					<span id="real" class="input-group-text">R$</span>
+					<!-- Poderia ser qualquer coisa, aqui coloquei o exemplo de reas -->
 				</div>
 
-				<div class="col-auto">
-					<div class="form-group">
-						<label for="email">Email:</label>
-						<input id="email" type="text" name="email" class="form-control" placeholder="email@email.com" />
-					</div>
-				</div>
 
-				<div class="col-auto">
-					<div class="form-group">
-						<label for="senha">Senha:</label>
-						<input id="senha" type="password" name="senha" class="form-control"
-							placeholder="******************" />
-					</div>
-				</div>
+				<input type="real" name="real" class="form-control" />
 
-			</div>
-
-
-			<div class="form-check">
-				<input type="checkbox" class="form-check-input" id="exampleCheck1">
-				<label class="form-check-label" for="exampleCheck1">Check me out</label>
-			</div>
-
-
-			<div class="col-auto">
-				<div class="col-auto">
-					<div class="form-group">
-						<input id="entrar" class="btn btn-primary" type="submit" value="Entrar">
-					</div>
+				<div class="input-group-append">
+					<span class="input-group-text">,00</span>
 				</div>
 			</div>
+
 
 
 		</form>
+
 
 	</div>
 
