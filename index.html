@@ -16,56 +16,31 @@
 <body>
 	<div class="container">
 
+		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janela">
+			Clique aqui para abrir
+		</button>
 
-		<div class="list-group">
-			<a href="#" class="list-group-item list-group-item-action list-group-item-action disabled">
-				<div class="d-flex justify-content-between ">
-					<h5>Titulo 1</h5>
-					<small>2 Dias Atras</small>
+		<div class="modal fade" id="janela" tabindex="-1" aria-labelledby="janela" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered ">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title">Titulo do Modal</h5>
+						<button class="close" data-bs-dismiss="modal"><span>X</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="row">
+							<div class="col">Item 1</div>
+							<div class="col">Item 2</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-primary" data-bs-dismiss="modal"> Salvar</button>
+						<button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+					</div>
 				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto nam earum maiores eligendi eius
-					libero explicabo? Omnis quasi ipsum possimus commodi debitis, explicabo obcaecati. Vero odio ut
-					adipisci accusamus.
-				</p>
-			</a>
-
-			<a href="#" class="list-group-item list-group-item-action">
-				<div class="d-flex justify-content-between">
-					<h5>Titulo 2</h5>
-					<small>2 Dias Atras</small>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto nam earum maiores eligendi eius
-					libero explicabo? Omnis quasi ipsum possimus commodi debitis, explicabo obcaecati. Vero odio ut
-					adipisci accusamus.
-				</p>
-			</a>
-
-			<a href="#" class="list-group-item list-group-item-action">
-				<div class="d-flex justify-content-between">
-					<h5>Titulo 3</h5>
-					<small>2 Dias Atras</small>
-				</div>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos iusto nam earum maiores eligendi eius
-					libero explicabo? Omnis quasi ipsum possimus commodi debitis, explicabo obcaecati. Vero odio ut
-					adipisci accusamus.
-				</p>
-			</a>
-
-			<a href="#" class="list-group-item list-group-item-action">
-				<div class="d-flex justify-content-between">
-					<h5>Titulo 4</h5>
-					<!-- <small>2 Dias Atras</small> -->
-				</div>
-				<p>
-					Lorem ipsum dolor sit
-				</p>
-				<span class="badge bg-primary rounded-pill">14</span>
-			</a>
+			</div>
 		</div>
-
 
 	</div>
 
