@@ -14,36 +14,41 @@
 </head>
 
 <body>
+
+	<!-- Nav Bar é o cabeçalho do site -->
 	<div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light " style="background-color: grey;">
 
-		<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#janela">
-			Clique aqui para abrir
-		</button>
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">1° Titulo</a>
 
-		<div class="modal fade" id="janela" tabindex="-1" aria-labelledby="janela" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered ">
-				<div class="modal-content">
-					<div class="modal-header">
-						<h5 class="modal-title">Titulo do Modal</h5>
-						<button class="close" data-bs-dismiss="modal"><span>X</span>
-						</button>
+				<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+
+				<div class="navbar-collapse collapse" id="navbarMenu">
+
+					<div class="navbar-nav">
+						<a href="#" class="nav-item nav-link">Link 1</a>
+						<a href="#" class="nav-item nav-link">Link 2</a>
+						<a href="#" class="nav-item nav-link">Link 3</a>
+						<a href="#" class="nav-item nav-link">Link 4</a>
 					</div>
-					<div class="modal-body">
-						<div class="row">
-							<div class="col">Item 1</div>
-							<div class="col">Item 2</div>
-						</div>
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-primary" data-bs-dismiss="modal"> Salvar</button>
-						<button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-					</div>
+
 				</div>
+
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+
 			</div>
-		</div>
+		</nav>
+
+
 
 	</div>
-
 	<script type="text/javascript" src="assets/js/jquery-3.6.0.js"></script>
 	<script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
